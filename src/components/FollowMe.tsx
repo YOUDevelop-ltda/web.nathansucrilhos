@@ -39,10 +39,15 @@ const FollowMeContainer = styled.div`
     }
 
     @media (max-width: 600px) {
-        padding: 2rem 4rem;
+        padding: 2rem 3rem;
 
         ul {
             flex-direction: column;
+            gap: 1rem;
+        }
+
+        h1 {
+            font-size: 2rem;
         }
     }
 `;

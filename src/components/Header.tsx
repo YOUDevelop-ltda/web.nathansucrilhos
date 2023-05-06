@@ -32,7 +32,7 @@ const HeaderConponent = styled.header`
     }
 
     @media (max-width: 600px) {
-        padding: 2rem 4rem;
+        padding: 2rem 3rem;
         justify-content: center;
 
         button {

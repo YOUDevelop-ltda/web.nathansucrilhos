@@ -40,7 +40,15 @@ const WhoAmIContainer = styled.div`
     }
 
     @media (max-width: 600px) {
-        padding: 2rem 4rem;
+        padding: 2rem 3rem;
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        div > p {
+            font-size: 1rem;
+        }
     }
 `;
 

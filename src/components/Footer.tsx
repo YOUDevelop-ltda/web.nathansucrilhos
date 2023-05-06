@@ -16,6 +16,15 @@ const FooterContainer = styled.footer`
     a {
         color: ${props => props.theme.colors.text};
     }
+
+    @media (max-width: 600px) {
+        padding: 2rem 3rem;
+
+        p {
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
 `;
 
 const Footer: React.FC = () => {

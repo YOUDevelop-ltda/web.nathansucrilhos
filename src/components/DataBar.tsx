@@ -40,7 +40,21 @@ const DataBarContainer = styled.div`
     }
 
     @media (max-width: 600px) {
-        padding: 2rem 4rem;
+        padding: 2rem 3rem;
+
+        ul {
+            
+        padding: 2rem;
+            div {
+                p.data {
+                    font-size: 2rem;
+                }
+
+                p.description {
+                    font-size: 1rem;
+                }
+            }
+        }
     }
 `;
 
