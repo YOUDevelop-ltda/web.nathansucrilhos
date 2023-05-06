@@ -7,6 +7,8 @@ const HeroContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
+    z-index: 1;
+
     div.content {
         grid-column-start: 1;
         grid-column-end: 3;
@@ -37,6 +39,7 @@ const HeroContainer = styled.div`
             position: absolute;
             top: -10rem;
             left: -20rem;
+            z-index: -1;
         }
     }
 `;

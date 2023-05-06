@@ -9,7 +9,8 @@ function MyApp({ Component, pageProps }: AppProps) {
     return (
         <ThemeProvider theme={theme}>
             <Head>
-                <title>Template :)</title>
+                <title>Natan Sucrilhos</title>
+                <link rel="shortcut icon" href="favicon.png" type="image/png" />
             </Head>
             <GlobalStyle />
             <Component {...pageProps} />

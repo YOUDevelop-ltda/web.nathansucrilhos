@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 const DataBarContainer = styled.div`
     padding: 2rem 8rem;
-    
+    z-index: 2;
+
     ul {
-        z-index: 190;
         color: ${props => props.theme.colors.background};
         background: ${props => props.theme.colors.text};
         padding: 2rem 5rem;

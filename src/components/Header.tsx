@@ -4,7 +4,6 @@ import CTAButton from "./CTAButton";
 
 const HeaderConponent = styled.header`
     color: ${props => props.theme.colors.text};
-    background: ${props => props.theme.colors.background};
 
     display: flex;
     justify-content: space-between;
