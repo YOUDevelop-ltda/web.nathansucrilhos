@@ -40,6 +40,10 @@ const FollowMeContainer = styled.div`
 
     @media (max-width: 600px) {
         padding: 2rem 4rem;
+
+        ul {
+            flex-direction: column;
+        }
     }
 `;
 
