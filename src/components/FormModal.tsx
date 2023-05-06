@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { db } from "../firebase";
 import { ref, set } from "firebase/database";
 import { nanoid } from "nanoid";
+import { Instagram } from "../icons";
 
 const ModalContainer = styled.div`
     color: ${props => props.theme.colors.text};
@@ -71,6 +72,8 @@ const Modal: React.FC<{
     const [email, setEmail] = useState<string>();
     const [phone, setPhone] = useState<string>();
 
+    const [sent, setSent] = useState<boolean>(false);
+
     const back = () => {
         setShow(false);
     };
@@ -81,35 +84,45 @@ const Modal: React.FC<{
         } : {
             display: "none",
         }}>
-            <h1>Seja um mentorado!</h1>
             <form>
-                <div>
-                    <label>Nome</label>
-                    <input type="text" placeholder="Insira seu nome"
-                        value={name}
-                        onChange={e => setName(e.target.value)}
-                    />
-                </div>
-                <div>
-                    <label>E-mail</label>
-                    <input type="mail" placeholder="Insira seu email"
-                        value={email}
-                        onChange={e => setEmail(e.target.value)}
-                    />
-                </div>
-                <div>
-                    <label>Telefone</label>
-                    <input type="text" placeholder="Insira seu telefone"
-                        value={phone}
-                        onChange={e => setPhone(e.target.value)}
-                    />
-                </div>
-                <Button type="submit" onClick={(e) => {
-                    e.preventDefault();
-                    set(ref(db, `respostas/${nanoid()}`), {
-                        name, email, phone
-                    }).then(back);
-                }}>Enviar</Button>
+                {sent ? (
+                    <>
+                        <h1>Agora para finalizar, siga meu Instagram que confirmarei sua participação no sorteio</h1>
+                        <Instagram/>
+                        <p>natansucrilhos</p>
+                    </>
+                ) : (
+                    <>
+                        <h1>Confirme sua participação no sorteio da mentoria!</h1>
+                        <div>
+                            <label>Nome</label>
+                            <input type="text" placeholder="Insira seu nome"
+                                value={name}
+                                onChange={e => setName(e.target.value)}
+                            />
+                        </div>
+                        <div>
+                            <label>E-mail</label>
+                            <input type="mail" placeholder="Insira seu email"
+                                value={email}
+                                onChange={e => setEmail(e.target.value)}
+                            />
+                        </div>
+                        <div>
+                            <label>Telefone</label>
+                            <input type="text" placeholder="Insira seu telefone"
+                                value={phone}
+                                onChange={e => setPhone(e.target.value)}
+                            />
+                        </div>
+                        <Button type="submit" onClick={(e) => {
+                            e.preventDefault();
+                            set(ref(db, `respostas/${nanoid()}`), {
+                                name, email, phone
+                            }).then(() => setSent(true));
+                        }}>Enviar</Button>
+                    </>
+                )}
                 <BackButton onClick={(e) => {
                     e.preventDefault();
                     back();
