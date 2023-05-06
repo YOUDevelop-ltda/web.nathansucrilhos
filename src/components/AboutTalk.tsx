@@ -42,14 +42,27 @@ const AboutTalkContainer = styled.div`
 const AboutTalk: React.FC<{ setShow: (v: boolean) => void }> = ({ setShow }) => {
     return (
         <AboutTalkContainer>
-            <h1>Sobre a palestra</h1>
+            <h1>Sobre a mentoria</h1>
             <p>
-                O <strong>Experience 2023</strong> é uma oportunidade única para expandir seus horizontes e se conectar com ideias e pessoas inspiradoras. Reunindo alguns dos principais especialistas em suas áreas de atuação, este evento proporcionará uma imersão completa em tópicos importantes e relevantes para nossas vidas e carreiras.
+                Você sonha em ter milhares de seguidores no Instagram e transformar sua paixão em uma fonte de renda? Então, a minha Mentoria  é exatamente o que você precisa! Aprenda comigo, especialista que já conquistou mais de 30 milhões de seguidores em minhas páginas e me tornei um dos maiores do Brasil em quantidade de seguidores e páginas no Instagram.
             </p>
             <img src="/talk.png" />
             <p>
-                Mas o evento não se trata apenas de aprendizado. É também um momento para conhecer novas pessoas, <strong>fazer networking e estabelecer conexões valiosas</strong> que podem ajudá-lo a crescer e a se destacar em sua carreira.
-                Este é um evento que irá desafiar sua mente, energizar sua criatividade e inspirá-lo a fazer mudanças positivas em sua vida pessoal e profissional. Então, junte-se a nós e prepare-se para uma <strong>experiência inesquecível de aprendizado, conexão e colaboração</strong>.
+            🚀 Desafio 100 mil seguidores em 30 dias 🚀
+            <br/><br/>
+            Como prova da eficácia de sua metodologia, Natan Sucrilhos vai criar um desafio e alcançar mais de 100 mil seguidores em menos de 30 dias. Acompanhe esse incrível processo e descubra como você também pode atingir o sucesso no Instagram!
+            <br/><br/>
+            ✨ O que você vai aprender na Mentoria do Natan Sucrilhos? ✨
+            <br/><br/>
+            1️⃣ A metodologia exclusiva que levou Natan ao sucesso, comprovada pelo desafio de 100 mil seguidores em 30 dias;
+            2️⃣ Estratégias de tráfego orgânico para crescer seu perfil de forma consistente e sustentável;
+            3️⃣ Dicas e técnicas para criar conteúdos virais que engajam seu público e atraem novos seguidores;
+            4️⃣ Como monetizar seu Instagram através de parcerias, publicidade e vendas de produtos;
+            5️⃣ Acesso a um grupo exclusivo de alunos para networking e troca de experiências.
+            <br/><br/>
+            🎯 Não perca esta oportunidade única de aprender com o mestre do Instagram e transformar sua paixão em lucro! 🎯
+            <br/><br/>
+            ⏰ As vagas são limitadas, então não perca tempo! Clique no botão abaixo e garanta a sua vaga na Mentoria Exclusiva do Natan Sucrilhos! ⏰
             </p>
             <CTAButton onClick={() => setShow(true)} />
         </AboutTalkContainer>
