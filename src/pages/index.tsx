@@ -14,6 +14,7 @@ const Home: NextPage = () => {
 
     useEffect(() => {
         window.scrollTo({top: 0, behavior: 'smooth'});
+        window.scrollTo({top: -1, behavior: 'smooth'});
     }, [show]);
 
     return (
