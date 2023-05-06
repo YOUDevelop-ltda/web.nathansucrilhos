@@ -31,6 +31,17 @@ const WhoAmIContainer = styled.div`
             width: 100%;
         }
     }
+
+    @media (max-width: 1000px) {
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    @media (max-width: 600px) {
+        padding: 2rem 4rem;
+    }
 `;
 
 const WhoAmI: React.FC = () => {

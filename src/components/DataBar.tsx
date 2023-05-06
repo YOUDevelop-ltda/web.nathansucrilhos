@@ -30,6 +30,18 @@ const DataBarContainer = styled.div`
             }
         }
     }
+
+    @media (max-width: 1000px) {
+        ul {
+            flex-direction: column;
+            text-align: center;
+            gap: 2rem;
+        }
+    }
+
+    @media (max-width: 600px) {
+        padding: 2rem 4rem;
+    }
 `;
 
 const DataBar: React.FC = () => {

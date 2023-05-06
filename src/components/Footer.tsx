@@ -12,12 +12,16 @@ const FooterContainer = styled.footer`
         font-weight: 500;
         font-size: 1.25rem;
     }
+
+    a {
+        color: ${props => props.theme.colors.text};
+    }
 `;
 
 const Footer: React.FC = () => {
     return (
         <FooterContainer>
-            <p>{new Date().getFullYear()} © <a href="https://youdevelop.app/">YOUDevelop</a>. Todos os direitos reservados.</p>
+            <p>{new Date().getFullYear()} © <a href="https://youdevelop.app/" target="_blank">YOUDevelop</a>. Todos os direitos reservados.</p>
         </FooterContainer>
     );
 };

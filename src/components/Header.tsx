@@ -24,6 +24,16 @@ const HeaderConponent = styled.header`
             font-size: 1.25rem;
         }
     }
+
+    @media (max-width: 1000px) {
+        ul {
+            display: none;
+        }
+    }
+
+    @media (max-width: 600px) {
+        padding: 2rem 4rem;
+    }
 `;
 
 const Header: React.FC = () => {

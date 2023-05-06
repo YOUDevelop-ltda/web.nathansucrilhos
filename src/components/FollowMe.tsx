@@ -26,7 +26,20 @@ const FollowMeContainer = styled.div`
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            cursor: pointer;
         }
+    }
+
+    @media (max-width: 1000px) {
+        text-align: center;
+
+        ul {
+            gap: 4rem;
+        }
+    }
+
+    @media (max-width: 600px) {
+        padding: 2rem 4rem;
     }
 `;
 
@@ -39,11 +52,11 @@ const FollowMe: React.FC = () => {
                     <YouTube/>
                     <p>natansucrilhos</p>
                 </li>
-                <li>
+                <li onClick={() => open("https://www.instagram.com/digitalinsano/", "_blank")}>
                     <Instagram/>
                     <p>natansucrilhos</p>
                 </li>
-                <li>
+                <li onClick={() => open("https://www.tiktok.com/@natansucrilhos", "_blank")}>
                     <TikTok/>
                     <p>natansucrilhos</p>
                 </li>

@@ -25,6 +25,10 @@ const AboutTalkContainer = styled.div`
     img {
         width: 100%;
     }
+
+    @media (max-width: 600px) {
+        padding: 2rem 4rem;
+    }
 `;
 
 const AboutTalk: React.FC = () => {

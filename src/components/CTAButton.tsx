@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Arrow } from "../icons";
+import { ButtonHTMLAttributes } from "react";
 
 const ButtonContainer = styled.button`
     display: flex;
@@ -11,6 +12,7 @@ const ButtonContainer = styled.button`
     background: ${props => props.theme.colors.highlights};
     box-shadow: 0px 2px 4px rgba(136, 144, 194, 0.2), 0px 5px 15px rgba(37, 44, 97, 0.15);
     border-radius: 0.2rem;
+    cursor: pointer;
 
     p {
         font-weight: 500;
@@ -18,9 +20,9 @@ const ButtonContainer = styled.button`
     }
 `;
 
-const CTAButton: React.FC = () => {
+const CTAButton: React.FC<ButtonHTMLAttributes<HTMLButtonElement>> = (props) => {
     return (
-        <ButtonContainer>
+        <ButtonContainer {...props}>
             <p>Torne-se um mentorado</p> <Arrow/>
         </ButtonContainer>
     );
