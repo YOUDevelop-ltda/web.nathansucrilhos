@@ -106,7 +106,7 @@ const Hero: React.FC<{ setShow: (v: boolean) => void }> = ({ setShow }) => {
                     height={937}
                 />
             </div>
-            <h1 className="mid">Domine a arte da Influência Digital</h1>
+            <h1 className="mid">Transforme seu Instagram em uma máquina de resultados</h1>
             <p className="mid">Não perca a oportunidade de ser um mentorado e conhecer mais sobre a incrível trajetória de Natan Sucrilhos, um especialista em tráfego orgânico que soma mais de 30 milhões de seguidores em suas redes sociais. Além de 180 perfis com mais de 100 mil seguidores!</p>
             <CTAButton className="mid" onClick={() => setShow(true)} />
             <img 
