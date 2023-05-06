@@ -76,7 +76,7 @@ const Modal: React.FC<{
     const [email, setEmail] = useState<string>();
     const [phone, setPhone] = useState<string>();
 
-    const [sent, setSent] = useState<boolean>(true);
+    const [sent, setSent] = useState<boolean>(false);
 
     const back = () => {
         setShow(false);
