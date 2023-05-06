@@ -2,16 +2,10 @@ import styled from "styled-components";
 import CTAButton from "./CTAButton";
 
 const HeroContainer = styled.div`
-    color: ${props => props.theme.colors.text};
-    background: ${props => props.theme.colors.background};
     padding: 2rem 8rem;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
-    div {
-        
-    }
 
     div.content {
         grid-column-start: 1;
