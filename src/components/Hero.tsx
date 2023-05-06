@@ -60,11 +60,12 @@ const HeroContainer = styled.div`
         }
 
         img {
-            margin-top: -10rem;
-            margin-bottom: -14rem;
+            width: 100%;
+            margin-top: -3rem;
+            margin-bottom: -10rem;
+            z-index: -1;
         }
 
-        
         p {
             font-weight: 500;
             font-size: 1.25rem;
@@ -98,14 +99,12 @@ const Hero: React.FC = () => {
                 />
             </div>
             <h1 className="mid">Domine a arte da Influência Digital</h1>
+            <p className="mid">Não perca a oportunidade de ser um mentorado e conhecer mais sobre a incrível trajetória de Natan Sucrilhos, um influenciador digital que soma mais de 30 milhões de seguidores em suas redes sociais. Além de 180 perfis com mais de 100 mil seguidores!</p>
+            <CTAButton className="mid" />
             <img 
                 src="/hero-busto.png"
                 className="mid"
-                width={899}
-                height={937}
             />
-            <p>Não perca a oportunidade de ser um mentorado e conhecer mais sobre a incrível trajetória de Natan Sucrilhos, um influenciador digital que soma mais de 30 milhões de seguidores em suas redes sociais. Além de 180 perfis com mais de 100 mil seguidores!</p>
-            <CTAButton className="mid" />
         </HeroContainer>
     );
 };
