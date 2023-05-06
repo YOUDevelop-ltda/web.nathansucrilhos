@@ -5,6 +5,7 @@ import DataBar from "../components/DataBar";
 import WhoAmI from "../components/WhoAmI";
 import AboutTalk from "../components/AboutTalk";
 import Divisor from "../components/Divisor";
+import FollowMe from "../components/FollowMe";
 
 const Home: NextPage = () => {
     return (
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
             <WhoAmI/>
             <AboutTalk/>
             <Divisor/>
+            <FollowMe/>
         </>
     );
 };
