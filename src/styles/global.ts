@@ -11,11 +11,6 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         font-family: sans-serif;
         color: ${props => props.theme.colors.text};
         background: ${props => props.theme.colors.background};

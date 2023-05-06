@@ -1,8 +1,9 @@
 import { NextPage } from "next";
+import Header from "../components/Header";
 
 const Home: NextPage = () => {
     return (
-        <h1>Oii :)</h1>
+        <Header/>
     );
 };
 
