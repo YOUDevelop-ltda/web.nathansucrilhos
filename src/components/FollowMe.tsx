@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Instagram, TikTok, YouTube } from "../icons";
+import { Instagram } from "../icons";
 
 const FollowMeContainer = styled.div`
     padding: 4rem 8rem;
@@ -57,18 +57,22 @@ const FollowMe: React.FC = () => {
         <FollowMeContainer>
             <h1>Siga-me nas redes sociais</h1>
             <ul>
-                <li>
+                {/* <li>
                     <YouTube/>
                     <p>natansucrilhos</p>
-                </li>
+                </li> */}
                 <li onClick={() => open("https://www.instagram.com/digitalinsano/", "_blank")}>
+                    <Instagram/>
+                    <p>digitalinsano</p>
+                </li>
+                <li onClick={() => open("https://www.instagram.com/natansucrilhos/", "_blank")}>
                     <Instagram/>
                     <p>natansucrilhos</p>
                 </li>
-                <li onClick={() => open("https://www.tiktok.com/@natansucrilhos", "_blank")}>
+                {/* <li onClick={() => open("https://www.tiktok.com/@natansucrilhos", "_blank")}>
                     <TikTok/>
                     <p>natansucrilhos</p>
-                </li>
+                </li> */}
             </ul>
         </FollowMeContainer>
     );

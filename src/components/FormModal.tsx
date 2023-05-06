@@ -36,6 +36,10 @@ const ModalContainer = styled.div`
         }
     }
 
+    a {
+        color: ${props => props.theme.colors.text};
+    }
+
     @media (max-width: 600px) {
         padding: 2rem 3rem;
     }
@@ -72,7 +76,7 @@ const Modal: React.FC<{
     const [email, setEmail] = useState<string>();
     const [phone, setPhone] = useState<string>();
 
-    const [sent, setSent] = useState<boolean>(false);
+    const [sent, setSent] = useState<boolean>(true);
 
     const back = () => {
         setShow(false);
@@ -88,8 +92,10 @@ const Modal: React.FC<{
                 {sent ? (
                     <>
                         <h1>Agora para finalizar, siga meu Instagram que confirmarei sua participação no sorteio</h1>
-                        <Instagram/>
-                        <p>natansucrilhos</p>
+                        <a href="https://www.instagram.com/digitalinsano/" target="_blank">
+                            <Instagram/>
+                            <p>digitalinsano</p>
+                        </a>
                     </>
                 ) : (
                     <>
