@@ -41,7 +41,7 @@ const HeaderConponent = styled.header`
     }
 `;
 
-const Header: React.FC = () => {
+const Header: React.FC<{ setShow: (v: boolean) => void }> = ({ setShow }) => {
     return (
         <HeaderConponent>
             <div className="logo">
@@ -52,7 +52,7 @@ const Header: React.FC = () => {
                 <li>Sobre a palesta</li>
                 <li>Contato</li>
             </ul>
-            <CTAButton/>
+            <CTAButton onClick={() => setShow(true)}/>
         </HeaderConponent>
     );
 };

@@ -83,13 +83,13 @@ const HeroContainer = styled.div`
     }
 `;
 
-const Hero: React.FC = () => {
+const Hero: React.FC<{ setShow: (v: boolean) => void }> = ({ setShow }) => {
     return (
         <HeroContainer>
             <div className="content big">
                 <h1>Domine a arte da Influência Digital</h1>
                 <p>Não perca a oportunidade de ser um mentorado e conhecer mais sobre a incrível trajetória de Natan Sucrilhos, um influenciador digital que soma mais de 30 milhões de seguidores em suas redes sociais. Além de 180 perfis com mais de 100 mil seguidores!</p>
-                <CTAButton />
+                <CTAButton onClick={() => setShow(true)} />
             </div>
             <div className="picture big">
                 <img 
@@ -100,7 +100,7 @@ const Hero: React.FC = () => {
             </div>
             <h1 className="mid">Domine a arte da Influência Digital</h1>
             <p className="mid">Não perca a oportunidade de ser um mentorado e conhecer mais sobre a incrível trajetória de Natan Sucrilhos, um influenciador digital que soma mais de 30 milhões de seguidores em suas redes sociais. Além de 180 perfis com mais de 100 mil seguidores!</p>
-            <CTAButton className="mid" />
+            <CTAButton className="mid" onClick={() => setShow(true)} />
             <img 
                 src="/hero-busto.png"
                 className="mid"

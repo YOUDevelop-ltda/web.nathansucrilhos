@@ -44,13 +44,13 @@ const WhoAmIContainer = styled.div`
     }
 `;
 
-const WhoAmI: React.FC = () => {
+const WhoAmI: React.FC<{ setShow: (v: boolean) => void }> = ({ setShow }) => {
     return (
         <WhoAmIContainer>
             <h1>Quem sou eu?</h1>
             <div>
                 <p>
-                    Olá, meu nome é Natan e sou um influenciador digital. Desde pequeno, sempre tive um grande interesse pela internet e pelo mundo das redes sociais. Passava horas navegando no Facebook e Instagram, e aos poucos fui descobrindo a possibilidade de criar conteúdo e compartilhar com outras pessoas.Foi então que comecei a experimentar o mundo da fotografia e edição de vídeo, criando pequenos projetos que compartilhava com meus amigos e familiares.
+                    Olá, meu nome é Natan, especialista em tráfego orgânico e vendas online. Desde pequeno, sempre tive um grande interesse pela internet e pelo mundo das redes sociais. Passava horas navegando no Facebook e Instagram, e aos poucos fui descobrindo a possibilidade de criar conteúdo e compartilhar com outras pessoas. Foi então que comecei a experimentar o mundo da fotografia e edição de vídeo, criando pequenos projetos que compartilhava com meus amigos e familiares.
                 </p>
                 <img src="/car.png" />
             </div>
@@ -60,7 +60,7 @@ const WhoAmI: React.FC = () => {
                     Com o tempo, minha audiência começou a crescer e comecei a receber oportunidades de trabalhar com marcas que admirava. Foi incrível poder transformar minha paixão em uma carreira e ter a chance de fazer o que amo todos os dias. Hoje, como influenciador digital, tenho um compromisso com meus seguidores de criar conteúdo autêntico, honesto e relevante. Meu objetivo é inspirar e motivar as pessoas, e ajudá-las a descobrir novas maneiras de se expressar e se conectar com o mundo.
                 </p>
             </div>
-            <CTAButton />
+            <CTAButton onClick={() => setShow(true)} />
         </WhoAmIContainer>
     );
 };

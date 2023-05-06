@@ -7,15 +7,24 @@ import AboutTalk from "../components/AboutTalk";
 import Divisor from "../components/Divisor";
 import FollowMe from "../components/FollowMe";
 import Footer from "../components/Footer";
+import Modal from "../components/FormModal";
+import { useEffect, useState } from "react";
 
 const Home: NextPage = () => {
+    const [show, setShow] = useState<boolean>(false);
+
+    useEffect(() => {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }, [show]);
+
     return (
         <>
-            <Header/>
-            <Hero/>
+            <Modal show={show} setShow={setShow}/>
+            <Header setShow={setShow} />
+            <Hero setShow={setShow} />
             <DataBar/>
-            <WhoAmI/>
-            <AboutTalk/>
+            <WhoAmI setShow={setShow} />
+            <AboutTalk setShow={setShow} />
             <Divisor/>
             <FollowMe/>
             <Footer/>
