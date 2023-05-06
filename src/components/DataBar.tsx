@@ -63,16 +63,16 @@ const DataBar: React.FC = () => {
         <DataBarContainer>
             <ul>
                 <div>
-                    <p className="data">10 mil</p>
-                    <p className="description">inscritos no YouTube</p>
+                    <p className="data">15 milhões</p>
+                    <p className="description">de reais faturados</p>
                 </div>
                 <div>
-                    <p className="data">700 mil</p>
+                    <p className="data">30 milhões</p>
                     <p className="description">seguidores no Instagram</p>
                 </div>
                 <div>
-                    <p className="data">200 mil</p>
-                    <p className="description">seguidores no TikTok</p>
+                    <p className="data">180</p>
+                    <p className="description">perfis no Instagram</p>
                 </div>
             </ul>
         </DataBarContainer>
