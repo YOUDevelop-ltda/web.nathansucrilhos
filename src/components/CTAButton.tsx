@@ -23,7 +23,7 @@ const ButtonContainer = styled.button`
 const CTAButton: React.FC<ButtonHTMLAttributes<HTMLButtonElement>> = (props) => {
     return (
         <ButtonContainer {...props}>
-            <p>Torne-se um mentorado</p> <Arrow/>
+            <p>Quero participar do sorteio</p> <Arrow/>
         </ButtonContainer>
     );
 };
