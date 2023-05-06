@@ -58,14 +58,14 @@ const WhoAmI: React.FC<{ setShow: (v: boolean) => void }> = ({ setShow }) => {
             <h1>Quem sou eu?</h1>
             <div>
                 <p>
-                    Olá, meu nome é Natan, especialista em tráfego orgânico e vendas online. Desde pequeno, sempre tive um grande interesse pela internet e pelo mundo das redes sociais. Passava horas navegando no Facebook e Instagram, e aos poucos fui descobrindo a possibilidade de criar conteúdo e compartilhar com outras pessoas. Foi então que comecei a experimentar o mundo da fotografia e edição de vídeo, criando pequenos projetos que compartilhava com meus amigos e familiares.
+                    Olá, meu nome é Natan Sucrilhos, especialista em tráfego orgânico e vendas online. Desde pequeno, percebi que eu teria que criar minhas próprias oportunidades, em 2016 observei que o Instagram seria a próxima rede social a se tornar a maior do brasil, e durante 4 anos seguidos errei de todas as formas possíveis, ate que em 2020 compilei todos meus erros e comecei a aplicar todas as estratégias que me fizeram sair de uma base de 500 mil seguidores para mais de 30 milhões e desbravar ate então uma esteira de produtos que não existia no mercado, me tornando um dos maiores copywriters do brasil, em relação a páginas de Instagram .  E AGORA, vou revelar tudo pra vocês .... mais de 7 anos de erros e acertos e vou te ajudar a transformar seu Instagram em uma maquina de vendas.
                 </p>
                 <img src="/car.png" />
             </div>
             <div>
                 <img src="/friends.png" />
                 <p>
-                    Com o tempo, minha audiência começou a crescer e comecei a receber oportunidades de trabalhar com marcas que admirava. Foi incrível poder transformar minha paixão em uma carreira e ter a chance de fazer o que amo todos os dias. Hoje, como influenciador digital, tenho um compromisso com meus seguidores de criar conteúdo autêntico, honesto e relevante. Meu objetivo é inspirar e motivar as pessoas, e ajudá-las a descobrir novas maneiras de se expressar e se conectar com o mundo.
+                    e nesse processo pude realizar um dos maiores sonhos da minha vida : dar uma casa para minha mãe , aposentar meus pais, que ate então vendiam bombons nos bares e investir na carreira de cantora da minha irmã Vitoria Montes .... Meu propósito agora e te ajudar a concretizar seus maiores sonhos.
                 </p>
             </div>
             <CTAButton onClick={() => setShow(true)} />
