@@ -18,6 +18,11 @@ const HeaderConponent = styled.header`
         align-items: center;
         gap: 2rem;
         list-style: none;
+
+        li {
+            font-weight: 600;
+            font-size: 1.25rem;
+        }
     }
 `;
 
@@ -33,8 +38,8 @@ const ButtonContainer = styled.button`
     border-radius: 0.2rem;
 
     p {
-        font-weight: 600;
-        font-size: 1.25rem;
+        font-weight: 500;
+        font-size: 1rem;
     }
 `;
 
