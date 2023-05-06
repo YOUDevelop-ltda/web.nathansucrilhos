@@ -16,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'Lato', sans-serif;
         color: ${props => props.theme.colors.text};
         background: ${props => props.theme.colors.background};
+        overflow-x: hidden;
     }
 `;
 

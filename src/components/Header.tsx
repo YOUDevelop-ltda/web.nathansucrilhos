@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { Arrow, Logo } from "../icons";
+import { Logo } from "../icons";
+import CTAButton from "./CTAButton";
 
 const HeaderConponent = styled.header`
     color: ${props => props.theme.colors.text};
@@ -26,23 +27,6 @@ const HeaderConponent = styled.header`
     }
 `;
 
-const ButtonContainer = styled.button`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 1rem 1.5rem;
-    color: ${props => props.theme.colors.text};
-    background: ${props => props.theme.colors.highlights};
-    box-shadow: 0px 2px 4px rgba(136, 144, 194, 0.2), 0px 5px 15px rgba(37, 44, 97, 0.15);
-    border-radius: 0.2rem;
-
-    p {
-        font-weight: 500;
-        font-size: 1rem;
-    }
-`;
-
 const Header: React.FC = () => {
     return (
         <HeaderConponent>
@@ -54,9 +38,7 @@ const Header: React.FC = () => {
                 <li>Sobre a palesta</li>
                 <li>Contato</li>
             </ul>
-            <ButtonContainer>
-                <p>Torne-se um mentorado</p> <Arrow/>
-            </ButtonContainer>
+            <CTAButton/>
         </HeaderConponent>
     );
 };
