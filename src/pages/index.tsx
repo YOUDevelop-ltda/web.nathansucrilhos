@@ -14,20 +14,24 @@ const Home: NextPage = () => {
 
     useEffect(() => {
         window.scrollTo({top: 0, behavior: 'smooth'});
-        window.scrollTo({top: -1, behavior: 'smooth'});
     }, [show]);
 
     return (
         <>
-            <Modal show={show} setShow={setShow}/>
-            <Header setShow={setShow} />
-            <Hero setShow={setShow} />
-            <DataBar/>
-            <WhoAmI setShow={setShow} />
-            {/* <AboutTalk setShow={setShow} /> */}
-            <Divisor/>
-            <FollowMe/>
-            <Footer/>
+            {show ? (
+                <Modal show={show} setShow={setShow}/>
+            ) : (
+                <>
+                    <Header setShow={setShow} />
+                    <Hero setShow={setShow} />
+                    <DataBar/>
+                    <WhoAmI setShow={setShow} />
+                    {/* <AboutTalk setShow={setShow} /> */}
+                    <Divisor/>
+                    <FollowMe/>
+                    <Footer/>
+                </>
+            )}
         </>
     );
 };
