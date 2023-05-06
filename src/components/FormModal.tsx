@@ -83,7 +83,7 @@ const Modal: React.FC<{
     };
 
     return (
-        <ModalContainer style={show ? {
+        <ModalContainer id="modal" style={show ? {
             display: "flex",
         } : {
             display: "none",

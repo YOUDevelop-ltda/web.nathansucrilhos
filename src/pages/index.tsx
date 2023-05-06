@@ -11,6 +11,7 @@ import WhoAmI from "../components/WhoAmI";
 
 const Home: NextPage = () => {
     const [show, setShow] = useState<boolean>(true);
+    const [hide, setHide] = useState<boolean>(false);
 
     useEffect(() => {
         window.scrollTo({top: 0, behavior: 'smooth'});
@@ -18,14 +19,25 @@ const Home: NextPage = () => {
 
     return (
         <>
-            {show ? (
-                <Modal show={show} setShow={setShow}/>
-            ) : (
+            <Modal show={show} setShow={v => {
+                setHide(false);
+                setShow(v);
+            }}/>
+            {hide ? null : (
                 <>
-                    <Header setShow={setShow} />
-                    <Hero setShow={setShow} />
+                    <Header setShow={v => {
+                        setHide(true);
+                        setShow(v);
+                    }} />
+                    <Hero setShow={v => {
+                        setHide(true);
+                        setShow(v);
+                    }} />
                     <DataBar/>
-                    <WhoAmI setShow={setShow} />
+                    <WhoAmI setShow={v => {
+                        setHide(true);
+                        setShow(v);
+                    }} />
                     {/* <AboutTalk setShow={setShow} /> */}
                     <Divisor/>
                     <FollowMe/>
