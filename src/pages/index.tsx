@@ -6,6 +6,7 @@ import WhoAmI from "../components/WhoAmI";
 import AboutTalk from "../components/AboutTalk";
 import Divisor from "../components/Divisor";
 import FollowMe from "../components/FollowMe";
+import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
     return (
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
             <AboutTalk/>
             <Divisor/>
             <FollowMe/>
+            <Footer/>
         </>
     );
 };
